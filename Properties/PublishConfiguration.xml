@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish>
+	<ModId Value="" />
+	<DisplayName Value="Measure It!" />
+	<ShortDescription Value="Survey routes, elevations, slopes, bearings, and areas directly on the Cities: Skylines II map." />
+	<LongDescription>
+## EN
+
+**Measure It!** brings an interactive surveying tool to *Cities: Skylines II*. Place points directly on the map to measure a street, check a route across uneven terrain, compare elevations, or trace the outline of an area. A live panel updates as you work, so the full survey and every individual segment stay visible while you place points.
+
+### Measure routes and terrain
+
+The readout separates the measurements that are easy to confuse. Total distance follows the three-dimensional path between your points; plan distance shows its horizontal projection. Net elevation compares the first and last points, while total ascent and descent add up every climb and drop along the route. Minimum and maximum elevations show the vertical range of the survey.
+
+The segment table lists the length, rise, slope, and bearing of each leg. Use it to inspect a steep section, compare grades along a road, or see how a route changes direction. Slope can be shown in degrees or percent, and bearing in degrees or as one of the eight cardinal directions.
+
+### Preview areas while drawing
+
+Trace three or more points around a building, lot, park, or other map feature. When the last point comes within 6 metres of the first, Measure It! displays an area preview using a virtual closing edge. This edge is only used to calculate the horizontal area: it does not add a measured segment or point, move the cursor, or prevent you from continuing the outline. The preview updates as you add points and disappears when the last point moves outside the closing tolerance.
+
+Choose square metres, hectares, square kilometres, square feet, or acres for the area readout. Because the area is calculated from the points’ map positions, it represents the shape’s horizontal footprint.
+
+### Place points at the height you need
+
+Enable node snapping to align placed points with nearby network nodes. Turn on **Ground** to place points on the terrain beneath the cursor, even when buildings or other objects are in the way. With Ground off, points can be placed on other map surfaces, such as a rooftop.
+
+Use **Lock** to keep new points at the height of the last point you placed. If Lock is enabled before the first point, that first point remains free; following points then use its height. Ground and Lock are mutually exclusive, so you can choose the placement behavior that fits the measurement.
+
+### Set units and appearance
+
+Choose metres, kilometres, feet, or miles for distance and height. Select degrees or percentage for slope, degrees or cardinal directions for bearing, and the area unit that suits the project. Pick from seven measurement colors to keep the survey visible against the map. The panel also lets you copy the segment readings as raw text or clear the current survey.
+
+Settings and panel position are saved between sessions. Measure It! is available both while playing a city and in the map editor.
+
+### Controls
+
+**Ctrl+5** toggles the tool. The left mouse button places a point; the right mouse button removes the last point. **Ctrl+Z** adds a point at the cursor, and **Ctrl+X** undoes the last point. You can change the keyboard bindings in the game settings.
+
+## FR
+
+**Measure It!** ajoute un outil de mesure interactif à *Cities: Skylines II*. Placez des points directement sur la carte pour mesurer une rue, suivre un parcours sur un terrain en pente, comparer des hauteurs ou relever le contour d’une surface. Le panneau se met à jour en direct et affiche le relevé complet ainsi que chacun de ses segments pendant que vous placez vos points.
+
+### Mesurer des parcours et le relief
+
+Le panneau distingue plusieurs mesures souvent confondues. La distance totale suit le parcours en trois dimensions entre les points ; la distance au sol en affiche la projection horizontale. Le dénivelé net compare le premier et le dernier point, tandis que les dénivelés positif et négatif additionnent toutes les montées et descentes du parcours. Les altitudes minimale et maximale indiquent l’amplitude verticale du relevé.
+
+Le tableau des segments détaille la longueur, le dénivelé, la pente et l’azimut de chaque tronçon. Vous pouvez ainsi examiner une portion raide, comparer la pente le long d’une route ou suivre les changements de direction. La pente s’affiche en degrés ou en pourcentage, et l’azimut en degrés ou selon les huit directions cardinales.
+
+### Visualiser une surface pendant le tracé
+
+Placez au moins trois points autour d’un bâtiment, d’une parcelle, d’un parc ou d’un autre élément de la carte. Lorsque le dernier point se trouve à moins de 6 mètres du premier, Measure It! affiche un aperçu de surface à l’aide d’une liaison virtuelle. Cette liaison sert uniquement au calcul de la surface horizontale : elle ne crée ni point ni segment mesuré, ne déplace pas le curseur et ne vous empêche pas de poursuivre le contour. L’aperçu se recalcule à chaque nouveau point et disparaît lorsque le dernier point sort de la tolérance de fermeture.
+
+Choisissez l’affichage en mètres carrés, hectares, kilomètres carrés, pieds carrés ou acres. La surface étant calculée à partir de la position des points sur la carte, elle correspond à l’emprise horizontale de la forme.
+
+### Placer les points à la hauteur voulue
+
+Activez l’accrochage aux nœuds pour aligner les points posés sur les nœuds de réseau proches. Le mode **Sol** place les points sur le terrain sous le curseur, même si des bâtiments ou d’autres objets se trouvent au-dessus. Lorsque Sol est désactivé, vous pouvez placer des points sur d’autres surfaces de la carte, comme un toit.
+
+Le mode **Verrou** conserve pour les nouveaux points la hauteur du dernier point placé. Si vous l’activez avant le premier point, celui-ci reste libre ; les points suivants reprennent alors sa hauteur. Sol et Verrou s’excluent mutuellement afin de vous laisser choisir le comportement adapté à votre mesure.
+
+### Choisir les unités et l’apparence
+
+Choisissez les mètres, kilomètres, pieds ou miles pour les distances et les hauteurs. La pente peut s’afficher en degrés ou en pourcentage, l’azimut en degrés ou en directions cardinales, et la surface dans l’unité qui convient au projet. Sept couleurs permettent de garder les mesures visibles sur la carte. Depuis le panneau, vous pouvez également copier les valeurs des segments au format brut ou effacer le relevé en cours.
+
+Les paramètres et la position du panneau sont conservés entre les sessions. Measure It! fonctionne dans une ville comme dans l’éditeur de carte.
+
+### Commandes
+
+**Ctrl+5** active ou désactive l’outil. Le clic gauche place un point ; le clic droit retire le dernier. **Ctrl+Z** ajoute un point à la position du curseur et **Ctrl+X** annule le dernier point. Les raccourcis clavier sont modifiables dans les paramètres du jeu.
+
+Author: espur04 (Discord)
+	</LongDescription>
+	<Thumbnail Value="Properties/Thumbnail.png" />
+	<Screenshot Value="" />
+	<Tag Value="Code Mod" />
+	<ForumLink Value="" />
+	<ModVersion Value="1.0.0" />
+	<GameVersion Value="1.*" />
+	<Dependency Id="" />
+	<RequiredDLC Value="" />
+	<ChangeLog Value="Initial release." />
+	<ExternalLink Type="" Url="" />
+	<AccessLevel Value="Public" />
+</Publish>

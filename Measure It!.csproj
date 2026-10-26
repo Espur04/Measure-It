@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Configurations>Debug;Release</Configurations>
+		<AssemblyName>MeasureItCS2</AssemblyName>
+		<RootNamespace>MeasureItCS2</RootNamespace>
+		<Version>1.0.0</Version>
+		<PublishConfigurationPath>Properties\PublishConfiguration.xml</PublishConfigurationPath>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<CSIIToolPath>$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))</CSIIToolPath>
+		<CSIIToolPath Condition="'$(CSIIToolPath)' == ''">$(CSII_TOOLPATH)</CSIIToolPath>
+	</PropertyGroup>
+
+	<Import Project="$(CSIIToolPath)\Mod.props" />
+	<Import Project="$(CSIIToolPath)\Mod.targets" />
+
+	<ItemGroup>
+		<Reference Include="Colossal.Mathematics"><Private>false</Private></Reference>
+		<Reference Include="Game"><Private>false</Private></Reference>
+		<Reference Include="Colossal.Core"><Private>false</Private></Reference>
+		<Reference Include="Colossal.Logging"><Private>false</Private></Reference>
+		<Reference Include="Colossal.IO.AssetDatabase"><Private>false</Private></Reference>
+		<Reference Include="Colossal.UI"><Private>false</Private></Reference>
+		<Reference Include="Colossal.UI.Binding"><Private>false</Private></Reference>
+		<Reference Include="Colossal.Localization"><Private>false</Private></Reference>
+		<Reference Include="Unity.InputSystem"><Private>false</Private></Reference>
+		<Reference Include="UnityEngine.CoreModule"><Private>false</Private></Reference>
+		<Reference Include="UnityEngine.IMGUIModule"><Private>false</Private></Reference>
+		<Reference Include="Unity.Burst"><Private>false</Private></Reference>
+		<Reference Include="Unity.Collections"><Private>false</Private></Reference>
+		<Reference Include="Unity.Entities"><Private>false</Private></Reference>
+		<Reference Include="Unity.Mathematics"><Private>false</Private></Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Update="System"><Private>false</Private></Reference>
+		<Reference Update="System.Core"><Private>false</Private></Reference>
+		<Reference Update="System.Data"><Private>false</Private></Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="$(ModPropsFile)" Link="Properties\Mod.props" />
+		<None Include="$(ModTargetsFile)" Link="Properties\Mod.targets" />
+	</ItemGroup>
+
+	<Target Name="BuildUI" AfterTargets="AfterBuild">
+		<Exec Command="npm run build" WorkingDirectory="$(ProjectDir)/UI" />
+	</Target>
+</Project>
